@@ -1,0 +1,62 @@
+
+.container {
+    background-color: #ccc;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+}
+.item {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-basis: 300px;
+    flex-shrink: 1;
+}
+
+.article-01{order: 3; flex-grow: 0;}
+.article-02{order: 1; align-self: flex-start;}
+.article-03{order: 2;}
+.article-04{order: 4; flex-shrink: 3;}
+
+
+/*
+
+1:O display é naturalmente em column, adicionando o display flex ele se torna naturalmente row 
+
+2: usamos o flex-direction row/reverse ou flex-direction: column/reverse pra defnir o sentido dos items
+
+3:flex-wrap: wrap/nowrap ou wrap-reverse define se quebra ou não a linha
+
+4|: flex-flow: row wrap-reverse é a fução do flex direction e o flex wrap
+5: justify-content: faz o alinhamento horizontal dos items.
+
+6: align-items : faz o alinhamento vertical do items, o BASELINE faz o alinhamento baseado no conteudo no conteúdo do item independendte do dimencionamento da div
+
+7: align-content: faz o dimencionamento respeitando a quebra de linha
+
+8: o ORDER serve pra declara a ordem no qual o itm vai seguir
+
+9: O align-self: essa classe é exclussiava do item filho serve pra mover o item expecificamente no display
+
+10: flex-grow : ela atribui o crescimento do item em 1x onde 1 é o dobro 2 é o triplo e etc.., pode ser padronizado no container ou individual no próprio item
+
+11: FLEX é a propriedade resumida das 3 propriedade grow, basis e shrink
+
+
+
+
+
+
+
+
+
+*/
